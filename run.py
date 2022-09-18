@@ -1,5 +1,5 @@
 from app import app
-from db import # DEBUG:
+from db import db # DEBUG:
 
 db.init_app(app)
 
