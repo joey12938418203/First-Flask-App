@@ -19,7 +19,7 @@ from db import db
 
 #API Itself
 app=Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get('DATABASE_URL','sqlite:///data.db')
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get('DATABASE_CUSTOM_URL','sqlite:///data.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 app.secret_key='dark_secret'
 api=Api(app)
